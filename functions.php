@@ -1,5 +1,5 @@
 <?php
-$conn = mysqli_connect("localhost", "root", "", "formlogin");
+$conn = mysqli_connect("localhost", "root", "", "stok_barang");
 
 function registrasi($data)
 {

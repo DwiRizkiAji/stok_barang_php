@@ -51,7 +51,11 @@ if (isset($_POST["login"])) {
       <div class="col-sm-6 col-md-4 mx-auto bg-light p-4">
         <h3 class="text-center text-info pb-3 mb-3 border-bottom">Login</h3>
         <?php if (isset($eror)) : ?>
-          <p style="color: red; font-style:italic;">username/ password salah</p>
+          echo "<script>
+            alert('username/ password salah');
+            document.location.href = "login.php";
+          </script>";
+          <!-- <p style="color: red; font-style:italic;">username/ password salah</p> -->
         <?php endif; ?>
 
         <form class="d-grid gap-3" action="" method="post">
